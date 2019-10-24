@@ -770,7 +770,7 @@ body {
   padding: 1rem; }
 
 .item-icons {
-  width: 5rem;
+  width: 10rem;
   text-decoration: none;
   transition: all .2s;
   -webkit-transition: all .2s;
@@ -831,7 +831,7 @@ body {
       width: 100%;
       margin: 0 auto; } }
   .feature-box_icon {
-    width: 6rem;
+    width: 8rem;
     margin-bottom: .5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #3e7df1, #063690f3);
@@ -1606,7 +1606,7 @@ body {
   position: relative;
   margin-top: 3.5rem; }
   .navigation-icon, .navigation-icon::before, .navigation-icon::after {
-    width: 3rem;
+    width: 7rem;
     height: 2px;
     background-color: #333;
     display: inline-block; }
