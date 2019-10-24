@@ -1,0 +1,69 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.6),
+        rgba($color-primary-dark, 0.6)
+      ),
+      url(../img/KB8A6676.jpg);
+    background-size: cover;
+    position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    
+    //Phone width background img
+    @include respond(phone){
+      background-image:linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.6),
+        rgba($color-primary-dark, 0.6)
+      ), url(../img/SmallScreenKB8A6676.jpg);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      height:70vh;
+    }
+  
+    &-logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+      @include respond(phone){
+        top:1rem;
+        left: 1rem;
+      }
+      .header-logo {
+        height: 15rem;
+        @include respond(phone){
+          height: 10rem;
+        }
+      }
+    }
+    &-text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      @include respond(tab-port){
+        top: 55%;
+        width:80%
+      }
+    }
+  }
+  
+  // @media only screen and (max-width: 650px) {
+  //   .header {
+  //     height: 95vh;
+  //     background-image: linear-gradient(
+  //         to right bottom,
+  //         rgba($color-primary-light, 0.6),
+  //         rgba($color-primary-dark, 0.6)
+  //       ),
+  //       url(../img/SmallScreenKB8A6676.jpg);
+  //     background-size: cover;
+  //   }
+  // }
+  

@@ -1,0 +1,101 @@
+.composition {
+    @include respond(tab-port){
+      text-align: center;
+    }
+    position: relative;
+    &_photo {
+      width: 55%;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      position: absolute;
+      outline-offset: 2rem;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      overflow: hidden;
+      &--p1 {
+        left: 0;
+        top: -2rem;
+      }
+      &--p2 {
+        right: 0;
+        top: 2rem;
+      }
+      &--p3 {
+        left: 20%;
+        top: 10rem;
+      }
+      &--p4 {
+        left: 50%;
+        top: 14rem;
+      }
+      &--p5 {
+        left: -14%;
+        top: 16rem;
+      }
+      @include respond(tab-port){
+        position: relative;
+        width:95%;
+        margin:1rem;
+        &--p1 {
+          left: 0;
+          top: 0;
+        }
+        &--p2 {
+          right: 0;
+          top: 0;
+        }
+        &--p3 {
+          left: 0;
+          top: 0;
+        }
+        &--p4 {
+          left: 0;
+          top: 0;
+        }
+        &--p5 {
+          left: 0;
+          top: 0;
+        }
+      }
+      &:hover {
+        outline: 1.5rem solid $color-gold;
+        box-shadow: 0 2.5rem 4rem rgba($color-black, 0.6);
+        transform: scale(2) translateY(-0.5rem);
+        -webkit-transform: scale(2) translateY(-0.5rem);
+        -moz-transform: scale(2) translateY(-0.5rem);
+        -ms-transform: scale(2) translateY(-0.5rem);
+        -o-transform: scale(2) translateY(-0.5rem);
+        z-index: 1;
+        @include respond(tab-port){
+          outline: none;
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none;
+          -ms-transform: none;
+          -o-transform: none;
+  }
+      }
+    }
+    &:hover &_photo:not(:hover) {
+      transform: scale(90);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(90);
+      -ms-transform: scale(90);
+      -o-transform: scale(90);
+      @include respond(tab-port){
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+  }
+    }
+  }
+  

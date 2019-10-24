@@ -1,0 +1,50 @@
+.navigation1{
+    position: fixed;
+    background-color:rgba($color-primary, .5);
+    top:3rem;
+    right: 3rem;
+    z-index: 20000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    &-item1{
+        margin:1rem;
+        list-style: none;
+      }
+      &-link1{
+         
+          &:link,
+          &:visited{
+            //   text-align: left;
+              display: inline-block;
+              padding:1rem 2rem;
+              font-size: 2rem;
+              font-weight: 700;
+              color:$color-white;
+              text-decoration: none;
+              text-transform: uppercase;
+              background-image: linear-gradient(120deg, transparent 0, transparent 50%, $color-white 50%);
+              background-size: 230%;
+              transition:all .3s;
+              -webkit-transition:all .3s;
+              -moz-transition:all .3s;
+              -ms-transition:all .3s;
+              -o-transition:all .3s;
+          }
+          &:hover,
+          &:active{
+              background-position: 100%;
+              color: $color-primary;
+              transform: translateX(1rem);
+              -webkit-transform: translateX(1rem);
+              -moz-transform: translateX(1rem);
+              -ms-transform: translateX(1rem);
+              -o-transform: translateX(1rem);
+          }
+      }
+      @include respond(tab-port){
+          display: none;
+      }
+}
