@@ -138,8 +138,8 @@ background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, F
     // padding         : 7rem 0;
     position: fixed;
     left:0;
-    bottom:2rem;
-    
+    bottom:10rem;
+    z-index: 300;
     @include respond(phone){
         position: relative;
         left:0;

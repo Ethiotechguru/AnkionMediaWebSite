@@ -109,7 +109,8 @@
   background-color: transparent;
   position: fixed;
   left: 0;
-  bottom: 2rem; }
+  bottom: 10rem;
+  z-index: 300; }
   @media (max-width: 37.6em) {
     .section-social {
       position: relative;
