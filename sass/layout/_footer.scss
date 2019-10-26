@@ -13,14 +13,22 @@
     
     &_logo-box{
         text-align: center;
-        margin-bottom: 8rem;
-        @include respond(tab-port){
-            margin-bottom:2rem ;
-        }
+        margin-bottom: 2rem;
+        // @include respond(tab-port){
+        //     margin-bottom:2rem ;
+        // }
+        
     }
     &_logo{
-        width: 15rem;
+        width:25%;
         height: auto;
+        @include respond(tab-land){
+            width: 30%;
+        }
+        @include respond(tab-port){
+            width:40%;
+        }
+        
     }
     &-navigation{
         border-top:1px solid $color-grey-light-1;

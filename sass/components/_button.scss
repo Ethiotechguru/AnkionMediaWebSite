@@ -5,7 +5,7 @@
       font-size: 1.5vw;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 1.5rem 4rem;
+      padding: 1.5rem 3rem;
       display: inline-block;
       border-radius: 10rem;
       -webkit-border-radius: 10rem;
@@ -23,7 +23,8 @@
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
       @include respond(tab-port){
-        font-size: 2rem;
+        padding: 1.5rem 4rem;
+        font-size: 1.2vh;
       }
     }
     &:hover {
@@ -84,10 +85,10 @@
       -ms-transition: all 0.4s;
       -o-transition: all 0.4s;
     }
-    @include respond(phone){
+    // @include respond(phone){
       
-      padding: 1.5rem 2rem;
-    }
+    //   padding: 1.5rem 2rem;
+    // }
     
   }
   

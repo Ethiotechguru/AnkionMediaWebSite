@@ -26,13 +26,13 @@
       position: absolute;
       top: 4rem;
       left: 4rem;
-      @include respond(phone){
+      @include respond(tab-port){
         top:1rem;
         left: 1rem;
       }
       .header-logo {
         height: 15rem;
-        @include respond(phone){
+        @include respond(tab-port){
           height: 10rem;
         }
       }
